@@ -10,21 +10,21 @@ const CategoryCard = ({onSelect}) => {
   const [ispressed4, press4, category4] = usePressed();
 
   const handlePress1 = () => {
-    press("men's");
-    onSelect(category);
+    const a = press("men's");
+    onSelect(a);
   };
 
   const handlePress2 = () => {
-    press2("women's");
-    onSelect(category2);
+    const b = press2("women's");
+    onSelect(b);
   };
   const handlePress3 = () => {
-    press3('jewelery');
-    onSelect(category3);
+    const c = press3('jewelery');
+    onSelect(c);
   };
   const handlePress4 = () => {
-    press4('electronics');
-    onSelect(category4);
+    const d = press4('electronics');
+    onSelect(d);
   };
 
   return (

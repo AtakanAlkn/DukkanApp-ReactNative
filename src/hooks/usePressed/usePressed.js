@@ -5,8 +5,10 @@ const usePressed = () => {
   const [text2, setText2] = useState('');
 
   press = text => {
-    ispressed ? setIsPressed(false) : setIsPressed(true);
+    setIsPressed(ispressed => !ispressed);
     text2 !== text ? setText2(text) : setText2('');
+
+    return text2;
   };
 
   return [ispressed, press, text2];
